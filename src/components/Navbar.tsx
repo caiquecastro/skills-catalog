@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
+import logo from "~/assets/logo.svg";
+
 export function Navbar() {
   return (
     <nav className="bg-gray-800">
@@ -17,13 +21,13 @@ export function Navbar() {
                 className="block h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
@@ -32,13 +36,13 @@ export function Navbar() {
                 className="hidden h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
@@ -46,15 +50,10 @@ export function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img
-                className="block h-8 w-auto lg:hidden"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
-              />
-              <img
-                className="hidden h-8 w-auto lg:block"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
+              <Image
+                className="block h-8 w-auto text-white"
+                src={logo}
+                alt="Skills Catalog"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
@@ -68,19 +67,19 @@ export function Navbar() {
                   Home
                 </a>
 
-                <a
-                  href="#"
+                <Link
+                  href="/skills"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
                   Skills
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
                   Professionals
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -94,13 +93,13 @@ export function Navbar() {
                 className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
                 />
               </svg>
@@ -117,11 +116,11 @@ export function Navbar() {
                   aria-haspopup="true"
                 >
                   <span className="sr-only">Open user menu</span>
-                  <img
+                  {/* <Image
                     className="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src="#"
                     alt=""
-                  />
+                  /> */}
                 </button>
               </div>
 
@@ -150,7 +149,7 @@ export function Navbar() {
                   tabIndex={-1}
                   id="user-menu-item-0"
                 >
-                  Your Profile
+                  Perfil
                 </a>
                 <a
                   href="#"
@@ -159,7 +158,7 @@ export function Navbar() {
                   tabIndex={-1}
                   id="user-menu-item-1"
                 >
-                  Settings
+                  Configurações
                 </a>
                 <a
                   href="#"
@@ -168,7 +167,7 @@ export function Navbar() {
                   tabIndex={-1}
                   id="user-menu-item-2"
                 >
-                  Sign out
+                  Sair
                 </a>
               </div>
             </div>
@@ -184,22 +183,22 @@ export function Navbar() {
             className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
             aria-current="page"
           >
-            Dashboard
+            Home
           </a>
 
-          <a
-            href="#"
+          <Link
+            href="/skills"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
-            Team
-          </a>
+            Skills
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            href="/professionals"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
-            Projects
-          </a>
+            Professionals
+          </Link>
 
           <a
             href="#"
