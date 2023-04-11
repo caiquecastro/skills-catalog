@@ -6,7 +6,7 @@ import { ProfileMenu } from "./ProfileMenu";
 export function Navbar() {
   return (
     <nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mb-4">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
@@ -75,7 +75,7 @@ export function Navbar() {
                   defaultClassName="text-gray-300 hover:bg-gray-700 hover:text-white"
                   activeClassName="bg-gray-900 text-white"
                 >
-                  Skills
+                  Habilidades
                 </Link>
 
                 <Link
@@ -84,7 +84,7 @@ export function Navbar() {
                   defaultClassName="text-gray-300 hover:bg-gray-700 hover:text-white"
                   activeClassName="bg-gray-900 text-white"
                 >
-                  Professionals
+                  Profissionais
                 </Link>
               </div>
             </div>
@@ -131,14 +131,14 @@ export function Navbar() {
             href="/skills"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
-            Skills
+            Habilidades
           </Link>
 
           <Link
             href="/professionals"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
-            Professionals
+            Profissionais
           </Link>
         </div>
       </div>

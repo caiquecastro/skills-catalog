@@ -1,7 +1,9 @@
+import { Title } from "@tremor/react";
+
 const SkillsPage = () => {
   return (
     <>
-      <h1 className="text-4xl mb-3 font-semibold">Habilidades</h1>
+      <Title>Habilidades</Title>
 
       <table className="w-full border-collapse bg-white text-left text-sm text-gray-500">
         <thead className="bg-gray-50">
@@ -37,18 +39,18 @@ const SkillsPage = () => {
             </td>
           </tr>
           <tr>
-            <th className="px-6 py-4 font-medium text-gray-900">Helen Howard</th>
-            <td className="px-6 py-4">Nov.4 2022</td>
+            <th className="px-6 py-4 font-medium text-gray-900">Rust</th>
+            <td className="px-6 py-4">2</td>
             <td className="flex justify-end gap-4 px-6 py-4 font-medium">
-              <a href="">Excluir</a>
-              <a href="" className="text-primary-700">
+              <a href="" className="text-red-400">Excluir</a>
+              <a href="" className="text-blue-500">
                 Editar
               </a>
             </td>
           </tr>
           <tr>
-            <th className="px-6 py-4 font-medium text-gray-900">Helen Howard</th>
-            <td className="px-6 py-4">Nov.4 2022</td>
+            <th className="px-6 py-4 font-medium text-gray-900">Frontend</th>
+            <td className="px-6 py-4">100</td>
             <td className="flex justify-end gap-4 px-6 py-4 font-medium">
               <a href="">Excluir</a>
               <a href="" className="text-primary-700">
