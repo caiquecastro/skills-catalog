@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { Inter } from "next/font/google";
-import { Navbar } from "~/app/components/Navbar";
+import { Navbar } from "~/components/Navbar";
 import "./globals.css";
 
 export const metadata = {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "~/assets/logo.svg";
-import { Link } from "~/app/components/Link";
+import { Link } from "~/components/Link";
 import { ProfileMenu } from "./ProfileMenu";
 
 export function Navbar() {
