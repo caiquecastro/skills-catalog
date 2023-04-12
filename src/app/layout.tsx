@@ -17,9 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-slate-50`}>
         <Navbar />
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <main className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );

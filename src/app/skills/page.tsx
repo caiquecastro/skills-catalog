@@ -1,6 +1,6 @@
 import { Title } from "@tremor/react";
 
-const SkillsPage = () => {
+const SkillsPage: React.FC = () => {
   return (
     <>
       <Title>Habilidades</Title>
