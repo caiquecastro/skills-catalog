@@ -10,7 +10,7 @@ import {
 const ProfessionalsPage: React.FC = () => {
   return (
     <>
-      <Title>Profissionais</Title>
+      <Title className="mb-4">Profissionais</Title>
 
       <Card>
         <Table>

@@ -3,7 +3,7 @@ import { Title } from "@tremor/react";
 const SkillsPage: React.FC = () => {
   return (
     <>
-      <Title>Habilidades</Title>
+      <Title className="mb-4">Habilidades</Title>
 
       <table className="w-full border-collapse bg-white text-left text-sm text-gray-500">
         <thead className="bg-gray-50">
